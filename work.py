@@ -8,12 +8,7 @@ from email.mime.text import MIMEText
 
 
 
-path = "C:\ZSY"
 
-os.makedirs(path, exist_ok=True)
-
-with open(os.path.join(path, "log.txt"), "w") as f:
-    f.write("Content of your file")
 
 
 
@@ -63,10 +58,10 @@ def sendMail(data,receivers,subject):
 
   # 第三方 SMTP 服务
         mail_host="smtp.qq.com"  #设置服务器
-        mail_user="3258447421@qq.com"    # 发送邮箱
-        mail_pass="zkqbtjvunbpbdahe"   #口令 
+        mail_user="123456789@qq.com"    # 发送邮箱
+        mail_pass="zk*************he"   #口令 
         
-        sender = '3258447421@qq.com' # 发送邮箱
+        sender = '123456789@qq.com' # 发送邮箱
         
 
         message = MIMEText(data, 'plain', 'utf-8')
